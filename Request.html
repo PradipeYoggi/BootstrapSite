@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Equipment from Corporate Office</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+      <nav class="navbar navbar-expand-sm bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Jack's Hardware Rentals -- Largo, FL</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav2">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Request Equipment</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> 
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+            <form>
+                <h4>Order additional equipment from Corporate Office</h4>
+                <div class="input-group sm-4" id="Equipments01">
+                    <div class="input-group-prepend">
+                      <label class="input-group-text" for="RentalEquipmentSelect01">Rental Equipment</label>
+                    </div>
+                    <select class="custom-select-sm" id="RentalEquipmentSelect01">
+                      <option selected>Choose...</option>
+                      <option value="1">Jack Hammer -- Mophorn 3600W Electric Demolition Hammer</option>
+                      <option value="2">Weed Wacker -- Honda HHT35SUKA 17" 35cc Straight Shaft Brush Cutter/Line String Trimmer</option>
+                      <option value="3">Lawn Mower -- Honda HRX2176HYA 21" 4-in-1 Versamow Hydrostatic Self-Propelled Lawn Mower</option>
+                    </select>
+                </div>
+                    <div class="mb-3">
+                        <label for="EquipmentQty1" class="form-label">Quantity</label>
+                        <input type="number" min="1" class="form-control" id="EquipmentQty1">
+                    </div>
+                <div class="form-group">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="staffName1" placeholder="Input Staff Name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="staffEmail1" placeholder="Input Staff Email">
+                    </div>
+                </div>
+                <button type="submit" id="submtitBtn1" class="btn btn-primary" onclick="OnSubmit()">Submit</button>
+
+            </form>
+        </div>
+
+        <div class="col-sm-8">
+            <div class="row">
+              <div class="col-sm" id="divProduct1">
+                <h4>Jack Hammer</h4>
+                  <div>
+                    <p id="pProductName1">Mophorn 3600W Electric Demolition Hammer</p>
+                    <img src="Mophorn.png" class="img-fluid img-thumbnail" >
+                  </div>
+              </div>
+              <div class="col-sm" id="divProduct2">
+                <h4>Weed Wacker</h4>
+                <div>
+                  <p id="pProductName2">Honda HHT35SUKA 17'' 35cc Straight Shaft Brush Cutter / Line String Trimmer</p>
+                  <img src="Honda.png" class="img-fluid img-thumbnail">
+                </div>
+              </div>
+              <div class="col-sm" id="divProduct3">
+                <h4>Lawn Mower</h4>
+                <div>
+                  <p id="pProductName3">Honda HRX2176HYA 21" 4-in-1 Versamow Hydrostatic Self-Propelled Lawn Mower</p>
+                  <img src="Honda-Mower.png" class="img-fluid img-thumbnail">
+                </div>
+              </div>
+        </div>      
+      </div>
+    </div>
+    <script>
+        function OnSubmit() {
+            alert(`Thank you, ${document.getElementById('staffName1').value}. \nWe will get your request processed!`);
+        }
+    </script>                        
+
+ </body>
+</html>
