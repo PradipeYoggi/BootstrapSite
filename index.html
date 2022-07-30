@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack's Retail Rental Inventory Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+      <nav class="navbar navbar-expand-sm bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Jack's Hardware Rentals -- Largo, FL</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav2">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Request.html">Request Equipment</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> 
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4">
+            <table class="table table-primary table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Product</th>
+                  <th scope="col">Daily Rate</th>
+                  <th scope="col">Qty in Stock</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Jack Hammer</td>
+                  <td>$64.00</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Weed Wacker</td>
+                  <td>$9.90</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Lawn Mower</td>
+                  <td>$49.00</td>
+                  <td>3</td>
+                </tr>
+              </tbody>            
+            </table>
+          </div>
+  
+          <div class="col-sm-8">
+            <div class="row">
+              <div class="col-sm" id="divProduct1">
+                <h4>Jack Hammer</h4>
+                  <div>
+                    <p id="pProductName1">Mophorn 3600W Electric Demolition Hammer</p>
+                    <img src="Mophorn.png" class="img-fluid img-thumbnail" >
+                    <ul>
+                      <li>
+                        Ideal for heavy-duty work at 3,600W and 1,800 BPM speed.
+                      </li>
+                      <li>
+                        One of the best jackhammer options for demanding applications including trench work, asphalt removal, and driving ground rods in rocky soil.
+                      </li>
+                      <li>
+                        Includes two replaceable chisels: a 16 in bull point chisel and a 16 in flat chisel.
+                      </li>
+                      <li>
+                        Provides more freedom and control with an adjustable 360-degree fore-grip for extended usage.
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+              <div class="col-sm" id="divProduct2">
+                <h4>Weed Wacker</h4>
+                <div>
+                  <p id="pProductName2">Honda HHT35SUKA 17'' 35cc Straight Shaft Brush Cutter / Line String Trimmer</p>
+                  <img src="Honda.png" class="img-fluid img-thumbnail">
+                  <ul>
+                    <li>
+                      The Honda Quick Start system offers a quick, easy start. No hassle. No fuss. Every time. The Honda 4 Stroke Engine is one of the most reliable in the industry!
+                    </li>
+                    <li>
+                      The HHT35SUKA is ideal for the professional whose needs range from regular trimming to clearing heavy brush, saplings, and small trees! Included is a 10 inch saw blade.
+                    </li>
+                    <li>
+                      Balance and maneuverability are superb due to the optimization of the engine's center of gravity, as well as the location of the throttle assembly and handle.
+                    </li>
+                    <li>
+                      The time for mixing and matching Oil and Gas are no more! Honda's GX35 mini 4-stroke engine runs on straight, unleaded gas. No need to mix gas and oil!
+                    </li>
+                    <li>
+                      Highly fuel efficient design costs less to operate - up to 50% less than a two-stroke trimmer! More beefy Power, and Less Money Spent!
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm" id="divProduct3">
+                <h4>Lawn Mower</h4>
+                <div>
+                  <p id="pProductName3">Honda HRX2176HYA 21" 4-in-1 Versamow Hydrostatic Self-Propelled Lawn Mower</p>
+                  <img src="Honda-Mower.png" class="img-fluid img-thumbnail">
+                  <ul>
+                    <li>
+                      Self-propelled, hydrostatic Cruise Control
+                    </li>
+                    <li>
+                      Easy starting Honda GCV200 engine
+                    </li>
+                    <li>
+                      4-in-1 Versamow System with Clip Director® - mulch, bag, discharge, and leaf shred
+                    </li>
+                    <li>
+                      Cruise Control: Simple, precision speed control - Honda's hydrostatic Cruise Control allows precise speed control that's fully adjustable from 0 to 4 mph.
+                    </li>
+                    <li>
+                      Honda MicroCut Twin Blades: superior mulching and bagging
+                    </li>
+                    <li>
+                      Honda Auto Choke System - easy starting
+                    </li>
+                    <li>
+                      3-position Quick Release adjustable handle - the quick release handle is easy to adjust to one of 3 positions for comfortable mowing. Or fold it over for more compact storage.
+                    </li>
+                    <li>
+                      Large 9" ball bearing wheels - ball bearings in all four wheels offer better maneuverability, smoother drive, and increased durability.
+                    </li>
+                    <li>
+                      7 position cutting height adjustment (.75" to 4") - convenient height adjustment levers to set mowing height for lawn conditions.
+                    </li>
+                    <li>
+                      Large 2.5 bushel capacity grass bag - our large capacity grass bags are balanced so they are easy to empty, saving you time and effort.
+                    </li>
+                    <li>
+                      Manual fuel shut-off valve - the fuel valve can be shut off for transport, storage, or to perform maintenance.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+      </div>
+</body>
+</html>
